@@ -1,0 +1,12 @@
+D:\Programs\Projects\VideoPlayer\ManyArgs\obj\Debug\ArgsImporter.csprojAssemblyReference.cache
+D:\Programs\Projects\VideoPlayer\ManyArgs\obj\Debug\ArgsImporter.csproj.CoreCompileInputs.cache
+D:\Programs\Projects\VideoPlayer\ManyArgs\bin\Debug\ArgsImporter.dll
+D:\Programs\Projects\VideoPlayer\ManyArgs\bin\Debug\ArgsImporter.pdb
+D:\Programs\Projects\VideoPlayer\ManyArgs\obj\Debug\ArgsImporter.dll
+D:\Programs\Projects\VideoPlayer\ManyArgs\obj\Debug\ArgsImporter.pdb
+D:\Programs\Projects\VideoPlayer\ArgsImporter\bin\Debug\ArgsImporter.dll
+D:\Programs\Projects\VideoPlayer\ArgsImporter\bin\Debug\ArgsImporter.pdb
+D:\Programs\Projects\VideoPlayer\ArgsImporter\obj\Debug\ArgsImporter.csprojAssemblyReference.cache
+D:\Programs\Projects\VideoPlayer\ArgsImporter\obj\Debug\ArgsImporter.csproj.CoreCompileInputs.cache
+D:\Programs\Projects\VideoPlayer\ArgsImporter\obj\Debug\ArgsImporter.dll
+D:\Programs\Projects\VideoPlayer\ArgsImporter\obj\Debug\ArgsImporter.pdb

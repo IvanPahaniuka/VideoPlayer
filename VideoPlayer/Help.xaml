@@ -1,0 +1,70 @@
+﻿<Window x:Class="VideoPlayer.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoPlayer"
+        mc:Ignorable="d"
+        Title="О программе" Height="340.184" Width="453.021"
+        Style="{DynamicResource WindowStyle}" KeyDown="Window_KeyDown" ResizeMode="NoResize">
+    <Grid Background="White" MouseLeftButtonDown="Grid_MouseDown">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="176,41,0,0" VerticalAlignment="Top" 
+                   TextAlignment="Left" Height="132" MaxHeight="274" HorizontalAlignment="Left" Width="225">
+            <Span FontSize="26">О программе</Span><LineBreak/><LineBreak/>
+            <Span FontSize="16">Название: <Span FontSize="18">CHEO</Span></Span><LineBreak/>
+            <Span FontSize="16">Версия: <Span FontSize="18">1.0</Span></Span><LineBreak/>
+            <Span FontSize="16">Дата обновления: <Span FontSize="18">05.08.2018</Span></Span>
+        </TextBlock>
+        <TextBlock Margin="0,207,-0.6,32.4" VerticalAlignment="Center" 
+                   TextAlignment="Center" Height="31">
+            <Span FontSize="20">Автор: Иван Поганюко</Span>
+        </TextBlock>
+        <Image Source="Resources/Cheo_logo.png" Margin="30,36,0,0" RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" Width="189" Height="136" VerticalAlignment="Top"/>
+        <Path  x:Name="imgPath" Data="M68.4,69.8H3.6c-0.8,0-1.4-0.6-1.4-1.4V3.6c0-0.8,0.6-1.4,1.4-1.4h64.8c0.8,0,1.4,0.6,1.4,1.4v64.8
+	                 C69.8,69.1,69.1,69.8,68.4,69.8z" Margin="34.529,40.905,0,0" Stretch="Fill" Fill="White" 
+               HorizontalAlignment="Left" Width="127.583" Height="127.583" VerticalAlignment="Top"
+               MouseLeftButtonDown="imgPath_MouseLeftButtonDown">
+            <Path.OpacityMask>
+                <ImageBrush x:Name="Mask" ImageSource="Resources/white.png" AlignmentX="Left" >
+                    <ImageBrush.Transform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform x:Name="MaskTransform" X="-135"/>
+                        </TransformGroup>
+                    </ImageBrush.Transform>
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Path.OpacityMask>
+            <Path.Resources>
+                <Storyboard Duration="0:0:1" x:Key="xxStory">
+                    <DoubleAnimation 
+                                                 Storyboard.TargetName="MaskTransform"
+                                                 Storyboard.TargetProperty="X" From="-135" To="135" DecelerationRatio="0.1" 
+                                                 AccelerationRatio="0.4"/>
+                    <DoubleAnimationUsingKeyFrames 
+                                                 Storyboard.TargetName="Mask"
+                                                 Storyboard.TargetProperty="Opacity">
+                        <LinearDoubleKeyFrame KeyTime="0%" Value="0" />
+                        <LinearDoubleKeyFrame KeyTime="75%" Value="0.5" />
+                        <LinearDoubleKeyFrame KeyTime="100%" Value="0" />
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+            </Path.Resources>
+        </Path>
+        <Button Style="{DynamicResource TextButtonStyle}" Background="{DynamicResource BarBrush}" Content="Закрыть" Foreground="White" 
+                TextElement.FontSize="14" Click="Button_Click" Grid.Row="1"/>
+    </Grid>
+</Window>

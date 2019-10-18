@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPlayer", "VideoPlayer\VideoPlayer.csproj", "{683A5471-D6B6-4F14-9114-3CD057C1A5AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgsImporter", "ArgsImporter\ArgsImporter.csproj", "{3BA2E0F8-0528-4ED1-9FBC-95E438DE2B43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{683A5471-D6B6-4F14-9114-3CD057C1A5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683A5471-D6B6-4F14-9114-3CD057C1A5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683A5471-D6B6-4F14-9114-3CD057C1A5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683A5471-D6B6-4F14-9114-3CD057C1A5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA2E0F8-0528-4ED1-9FBC-95E438DE2B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA2E0F8-0528-4ED1-9FBC-95E438DE2B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA2E0F8-0528-4ED1-9FBC-95E438DE2B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA2E0F8-0528-4ED1-9FBC-95E438DE2B43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C5A8CFB-7703-4795-82A4-4F8B28328094}
+	EndGlobalSection
+EndGlobal
